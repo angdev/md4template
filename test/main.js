@@ -12,6 +12,8 @@ function test_failed() {
 	process.exit(1);
 }
 
+md4tpl.config['prefix'] = 'md_';
+
 //parseFile test
 test_html = md4tpl.parseFile(path.join(__dirname, 'test.md'));
 console.log(blue + 'parseFile : \n' + reset + test_html);
@@ -36,6 +38,9 @@ for(var k in test_html_arr) {
 		continue;
 	}
 	console.log(red + k);
+	if(k.indexOf(md4tpl.config['prefix']) != 0) {
+		test_failed();
+	}
 }
 
 console.log(reset + 'Test OK');

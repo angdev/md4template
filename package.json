@@ -1,6 +1,6 @@
 {
   "name": "md4template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "markdown for template engine",
   "main": "lib/main.js",
   "scripts": {
@@ -17,10 +17,11 @@
   "author": "angdev",
   "license": "BSD",
   "gitHead": "2b571ee1e0603e1798dbc95ca058ceb090911dfb",
-  "readmeFilename": "readme.md",
+  "readmeFilename": "README.md",
   "dependencies": {
     "node-markdown": "*"
   },
+  "main": "./lib/main",
   "scripts": {
     "test": "node ./test/main"
   }
