@@ -1,4 +1,4 @@
-###md4template
+#md4template
 
 ## Feature
 
@@ -26,12 +26,13 @@ parsed_list = md4tpl.parseDir(dir_path);
 ```
 
 ## Example
-# md4template with express, ejs.
+### md4template with express, ejs.
 
 > expressApp/public/markdown/index/
-> current.md
-> favorite.md
-> work.md
+  * current.md
+  * favorite.md
+  * work.md
+
 
   * route/index.js
   
