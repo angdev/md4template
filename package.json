@@ -1,0 +1,24 @@
+{
+  "name": "md4template",
+  "version": "0.0.0",
+  "description": "markdown for template engine",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FeGs/md4template.git"
+  },
+  "keywords": [
+    "markdown",
+    "template"
+  ],
+  "author": "angdev",
+  "license": "BSD",
+  "gitHead": "2b571ee1e0603e1798dbc95ca058ceb090911dfb",
+  "readmeFilename": "readme.md",
+  "dependencies": {
+    "node-markdown": "*"
+  }
+}
