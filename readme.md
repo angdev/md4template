@@ -26,4 +26,45 @@ parsed_list = md4tpl.parseDir(dir_path);
 ```
 
 ## Example
+# md4template with express, ejs.
 
+> expressApp/public/markdown/index/
+> current.md
+> favorite.md
+> work.md
+
+  * route/index.js
+  
+```javascript
+...
+
+var md4tpl = require('md4template');
+
+exports.index = function(req, res){
+  res.render('index', md4tpl.parseDir(path.join(__dirname, '../public', 'markdown', 'index')));
+};
+
+...
+```
+
+  * view/index.ejs
+
+```html
+...
+
+<div class="page-region">
+	<div class="page-region-content">
+		<div>
+			<%- current %>
+		</div>
+		<div>
+			<%- favorite %>
+		</div>
+		<div>
+			<%- work %>
+		</div>
+	</div>
+</div>
+
+...
+```
