@@ -1,5 +1,11 @@
 #md4template
 
+## Installation
+
+```bash
+$ npm install md4template
+```
+
 ## Feature
 
   * Parsing a markdown file on file system.
@@ -16,23 +22,31 @@ md4tpl.config['encoding'] = 'utf8';
 
 //default prefix - ''
 //prefix for key of returned array from 'parseDir'.
-md4tpl.config['prefix'] = 'md';
+md4tpl.config['prefix'] = 'md_';
 
 //parse a markdown file.
 parsed_str = md4tpl.parseFile(file_path);
 
 //parse markdown files in a directory.
 parsed_list = md4tpl.parseDir(dir_path);
+
+//if there are files 'index.md', 'work.md' in dir_path..
+//'md_' is prefix.
+//parsed_list = { "md_index" : [html code of index.md], "md_work" : [html code of md_work.md] }
 ```
 
 ## Example
 ### md4template with express, ejs.
 
 > expressApp/public/markdown/index/
+  
   * current.md
+  
   * favorite.md
+  
   * work.md
 
+***
 
   * route/index.js
   
